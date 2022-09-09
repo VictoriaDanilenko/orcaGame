@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  background: url(img/sea1.png) no-repeat;
+  /* background-size: 2140px 1510px, auto, 2150px; */
+  background-size: 100%;
+}
+
+.game {
+  width: 800px;
+  height: 700px;
+  margin: auto;
+}
+
+#orca {
+  width: 250px;
+  height: 150px;
+  background-image: url(img/orcacartoone.png);
+  background-size: 240px 150px;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 130px;
+}
+
+#brand {
+  width: 100px;
+  height: 100px;
+  background-image: url(img/сс.png);
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 68px;
+  left: 580px;
+  animation: brandMov 2s infinite linear;
+}
+@keyframes brandMov {
+  0% {
+    left: 580px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+
+.jump {
+  animation: jump 1.5s linear;
+}
+@keyframes jump {
+  0% {
+    top: 130px;
+  }
+  30% {
+    top: 80px;
+  }
+  50% {
+    top: 10px;
+  }
+  80% {
+    top: 80px;
+  }
+  100% {
+    top: 130px;
+  }
+}
